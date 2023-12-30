@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Press+Start+2P&display=swap');
+:root {
+    --backgroundcolor1:rgba(246,243,235,1);
+    --navcolor:rgba(255,255,255,1);
+    --textcolor1: rgba(85,84,82,1);
+    --textcolor2: rgba(4,73,69,1);
+    --color1:rgba(255,230,150,1);
+    --color3:rgba(125,124,120,1);
+  }
+  @keyframes popdown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
