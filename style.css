@@ -10,13 +10,4 @@
     --color1:rgba(255,230,150,1);
     --color3:rgba(125,124,120,1);
   }
-  @keyframes popdown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+  
