@@ -4,35 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>ZenVista</title>
 </head>
 <body class="bg-backgroundcolor1 m-0 p-0 w-full">
     
     <img class= "float-right " src="assets/Hexagon 1.png" alt="" srcset="">
     <!-- /*Navbar*/ -->
-    <nav class="absolute z-10 w-full flex flex-wrap items-center justify-between py-2 lg:py-4 mt-10 ">
-        <div class="container h-16 ml-5 lg:ml-40 mr-5 lg:mr-40 bg-[rgba(255,255,255,0.5)] backdrop-blur-md rounded-2xl flex items-center justify-start">
-            <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ml-5 lg:ml-56 mr-2 lg:mr-20" href="#home">Home</a>
-            <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mx-2 lg:mx-20" href="#about">About</a>
-            <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mx-2 lg:mx-20" href="#doctors">Doctors</a>
-            <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mr-5 lg:mr-40 ml-2 lg:ml-20" href="#contacts">Contact</a>
+    <nav class="absolute z-10 w-full flex flex-wrap items-center justify-center py-2 lg:py-4 mt-5 ">
+      <div class="container h-16 mx-40 bg-navcolor backdrop-blur-md rounded-2xl flex items-center justify-start">
+          
+          <div id="menu" class="hidden lg:flex">
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ml-5 lg:ml-56 mr-2 lg:mr-20" href="#home">Home</a>
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mx-2 lg:mx-20" href="#about">About</a>
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mx-2 lg:mx-20" href="#doctors">Doctors</a>
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mr-5 lg:mr-40 ml-2 lg:ml-20" href="#contacts">Contact</a>
+          </div>
+          <div class=" lg:hidden relative group inline-block right-0"  >
+            <button class="flex items-center px-3 py-2 border rounded bg-tex" id="menu-toggle">
+              <svg class="color-textcolor1 h-3 w-3 " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+            <div id="dropdown-menu" class=" absolute  mt-2 w-48 rounded-md shadow-lg py-1 bg-backgroundcolor1 hidden group-hover:block" aria-hidden="true">
+                <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
+                <a href="#doctors" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Doctors</a>
+                <a href="#contacts" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Us</a>
+            </div>
         </div>
+      </div>
+  </nav>
+</body>
           
     </nav>
     <!-- /*Navbar ends*/ -->
     <!-- /*Home section start*/ -->
         <section id="home">
-            <section class="flex flex-col md:flex-row items-center p-6 md:p-40 mx-6 md:mx-40">
-                <div>
-                    <h1 class="text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl mt-10 md:mt-40 w-full md:w-auto p-2 md:p-10">
+          <div class="flex items-center justify-center min-h-screen mx-80">
+          <section class="flex flex-col sc:flex-row justify-center items-center mx-auto my-auto">
+                <div >
+                    <h1 class="text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl mt-10 md:mt-40 w-full md:w-auto p-2 md:p-10 ">
                         <div class="whitespace-nowrap mb-3">Your Health,</div>
                         <div class="whitespace-nowrap">your match</div>
                     </h1>
                     <p class="mt-5 text-textcolor1 font-custom font-medium text-xl md:text-2xl p-2 md:p-10">Find specialized doctors for your unique needs effortlessly</p>
                 </div>
-                <img class="w-full md:w-auto mt-6 md:mt-0 md:ml-40" src="assets/home_pic.png" alt="Your Image">
+                <img class="w-full " src="assets/home_pic.png" alt="Your Image">
             </section>
-            
+          </div>
             <div class="relative">
                
                 <section class="flex flex-col md:flex-row justify-center items-center bg-textcolor2 z-20 max-w-full h-auto md:h-32 w-full">
@@ -72,7 +90,59 @@
       <!--Doctors section start-->
       <section id="doctors">
         
+        <div class="top" style="display: flex; flex-direction: column; align-items:flex-end; margin-right: 100px;">
+          <img src="./assets/Group 1000001776.png" alt="shapes" style=" width: 10%;margin-top: 10px;">
+        </div>
+        <div class="left" style="display: flex; flex-direction: column;justify-content: flex-start; align-items: flex-start;padding: 40px;">
+          <h1 class="text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl">
+              <div class="whitespace-nowrap mb-3">Best Doctors right </div>
+              <div class="whitespace-nowrap">around the corner</div>
+          </h1>
+          <div class="container" style="display: flex; flex-direction: column;justify-content: flex-start; align-items: flex-start;margin-top: 30px; text-align: center; ">
+            <p class="text-textcolor1 font-custom font-medium text-xl lg:flex-wrap " style="text-align: left; width: fit-content;">
+              Discover the best doctors just around the <br>
+              corner, providing top-notch healthcare that's<br>
+              convenient and accessible for you.
+            </p>
+          </div>
+          <div class="top" style="display: flex; flex-direction: column; align-items:flex-start;justify-content: flex-start;">
+          <img src="./assets/Prompt bar.png" alt="Prompt bar" style="margin-top: 30px; width: 100%;">
+          </div>
+        </div>
+
+
+        <div class="right" style="display: flex; flex-direction:row;justify-content: flex-end; align-items: flex-end; padding: 20px;">
+          <img src="./assets/Vector 2.png" alt="Prompt bar" style="width:15%; margin-bottom: 200px;">
+          <div class="r" style="display: flex; flex-direction: column; align-items:center; padding: 20px;">
+            <img src="./assets/Frame.png" alt="Prompt bar" style="width: 15%; margin-bottom: 40px;">
+            <h1 class="text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl">
+              <div class="whitespace-nowrap mb-3">Choose the best doctor </div>
+              <div class="whitespace-nowrap">for your health needs</div>
+            </h1>
+            <div class="container" style="display: flex; flex-direction: column; align-items: flex-start; padding: 20px;margin-right: 30px;margin-top: 20px; text-align: center; ">
+              <p class="text-textcolor1 font-custom font-medium text-xl lg:flex-wrap " style="text-align: left; width: fit-content;">
+                  Choose the best doctor for your health needs<br>
+                  and experience personalized care tailored to<br>
+                  your well-being. Your health is our priority.
+              </p>
+            </div>
+          </div>
+          <div class="pic">
+            <img src="./assets/Group 20.png" alt="Prompt bar" style="width: 100%; margin-bottom: 40px;">
+          </div>
+        </div>
+        <div class="top" style="display: flex; flex-direction: column; align-items:flex-start;">
+          <img src="./assets/Group 1000001777.png" alt="shapes" style=" width: 10%;margin-top: 10px; margin-left: 100px;">
+        </div>
+        
+        <div class="flex justify-center items-center">
+          <button class="px-10 py-5 bg-color1 text-black rounded-full font-bold shadow-lg">KNOW MORE</button>
+      </div>
+      
+        
       </section>
+
+
       <!--Doctors section end-->
       <!--Contacts section start-->
       <section id="contacts ">
@@ -98,8 +168,7 @@
                    <img src="assets/discord.png" alt="" class="float-left">
                 </div>
                 <div class="relative  ">
-                  <img src="assets/Ellipse 793.png" alt="" class=" absolute inset-0 z-20 ml-16 pt-20 w-4/6">
-                  <img src="assets/Ellipse 794.png" alt="" class=" absolute inset-0 z-20 pt-12 ml-2 h-5/6 ">
+                  <img src="assets/Component 3.png" alt="" class=" ml-16 pt-20 w-4/6">
                 </div>
               </div>
             </div>
@@ -170,6 +239,6 @@
           
         </footer>
       </div>
-      <!--Footer section end-->
+      <script src="script.js"></script>
 </body>
 </html>
