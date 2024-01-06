@@ -3,6 +3,9 @@ module.exports = {
   content: ["*"],
   theme: {
     extend: {
+      screens: {
+        'sc': '1200px',
+      },
       fontFamily: {
         'custom': ['Kanit', 'fallbackFont', 'sans-serif']
       },
