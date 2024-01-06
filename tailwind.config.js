@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       screens: {
         'sc': '1200px',
+        'br': '1173px',
+        'rw' :'882px',
+        'ui':'764px',
+
       },
       fontFamily: {
         'custom': ['Kanit', 'fallbackFont', 'sans-serif']
