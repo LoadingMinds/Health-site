@@ -7,29 +7,29 @@
     
     <title>ZenVista</title>
 </head>
-<body class="bg-backgroundcolor1 m-0 p-0 w-full">
+<body class="bg-backgroundcolor1 m-0 p-0 w-full font-myriad">
     
     <img class= "float-right " src="assets/Hexagon 1.png" alt="" srcset="">
     <!-- /*Navbar*/ -->
     <nav class="absolute z-10 w-full flex flex-wrap items-center justify-center py-2 lg:py-4 mt-5 ">
       <div class="container h-16 mx-40 bg-navcolor backdrop-blur-md rounded-2xl flex items-center justify-start">
           
-          <div id="menu" class="hidden lg:flex items-center justify-center">
-              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ml-5 lg:ml-56 mr-2 lg:mr-20" href="#home">Home</a>
-              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mx-2 lg:mx-20" href="#about">About</a>
-              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mx-2 lg:mx-20" href="#doctors">Doctors</a>
-              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline mr-5 lg:mr-40 ml-2 lg:ml-20" href="#contacts">Contact</a>
+          <div id="menu" class=" lg:flex items-center justify-center hidden">
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ui:mx-6 rw:mx-11 lg:mx-20 br:mx-28" href="#home">Home</a>
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ui:mx-6 rw:mx-11 lg:mx-20 br:mx-28" href="#about">About</a>
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ui:mx-6 rw:mx-11 lg:mx-20 br:mx-28" href="#doctors">Doctors</a>
+              <a class="text-xl text-textcolor1 hover:text-textcolor2 hover:underline ui:mx-6 rw:mx-11lg:mx-20 br:mx-28" href="#contacts">Contact</a>
           </div>
-          <div class=" lg:hidden relative group inline-block right-0"  >
+          <div class=" md:hidden relative group inline-block right-0"  >
             <button class="flex items-center px-3 py-2 border rounded bg-tex" id="menu-toggle">
               <svg class="color-textcolor1 h-3 w-3 " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
-            <div id="dropdown-menu" class=" absolute  mt-2 w-48 rounded-md shadow-lg py-1 bg-backgroundcolor1 hidden group-hover:block" aria-hidden="true">
-                <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
-                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
-                <a href="#doctors" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Doctors</a>
-                <a href="#contacts" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Us</a>
-            </div>
+          <div id="dropdown-menu" class="justify-center items-center mx-10 absolute mt-2 w-96 h-96 rounded-md shadow-lg py-1 bg-backgroundcolor1 hidden group-hover:block z-70" aria-hidden="true">
+            <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#doctors" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Doctors</a>
+            <a href="#contacts" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Us</a>
+        </div>
         </div>
       </div>
   </nav>
@@ -38,9 +38,9 @@
     </nav>
     <!-- /*Navbar ends*/ -->
     <!-- /*Home section start*/ -->
-        <section id="home">
-          <div class="flex items-center justify-center min-h-screen mx-80">
-          <section class="flex flex-col sc:flex-row justify-center items-center mx-auto my-auto">
+        <section id="home" class="mt-0 ml-0 top-0">
+          <div class="flex items-center justify-center min-h-screen mx-80 ">
+          <section class="flex flex-col sc:flex-row justify-center items-center max-md:-mt-96 max-md:-ml-56 ">
                 <div >
                     <h1 class="text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl mt-10 md:mt-40 w-full md:w-auto p-2 md:p-10 ">
                         <div class="whitespace-nowrap mb-3">Your Health,</div>
@@ -53,23 +53,23 @@
           </div>
             <div class="relative">
                
-                <section class="flex flex-col md:flex-row justify-center items-center bg-textcolor2 z-20 max-w-full h-auto md:h-32 w-full">
+                <section class="flex flex-col br:flex-row justify-center items-center bg-textcolor2 z-20 max-w-full  w-full mt-10 ">
                     
-                    <div class="flex flex-col md:flex-row justify-center mx-6 md:mx-40">
+                    <div class="flex my-10 flex-col md:flex-row justify-center mx-6 md:mx-40">
                         <img src="assets/review.png" alt="Icon" class="w-1/2 md:w-1/4 h-full mb-2">
                         <div class="flex-col">
                             <h2 class="text-4xl font-extrabold mb-4 ml-5 text-navcolor font-custom">50+</h2>
                             <p class="text-2xl font-medium whitespace-nowrap ml-5 text-navcolor font-custom" id="memberCount">Total Reviews</p>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row justify-center mx-6 md:mx-40">
+                    <div class="flex my-10 flex-col md:flex-row justify-center mx-6 md:mx-40">
                         <img src="assets/campaign.png" alt="Icon" class="w-1/2 md:w-1/4 h-full mb-2">
                         <div class="flex-col">
                             <h2 class="text-4xl font-extrabold mb-4 ml-5 text-navcolor font-custom">50+</h2>
                             <p class="text-2xl font-medium whitespace-nowrap ml-5 text-navcolor font-custom" id="memberCount">Total Reviews</p>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row justify-center mx-6 md:mx-40">
+                    <div class="flex my-10 flex-col md:flex-row justify-center mx-6 md:mx-40">
                         <img src="assets/doctorsbag.png" alt="Icon" class="w-1/2 md:w-1/4 h-full mb-2">
                         <div class="flex-col">
                             <h2 class="text-4xl font-extrabold text-navcolor mb-4 ml-5 font-custom">50+</h2>
@@ -134,21 +134,24 @@
               convenient and accessible for you.
             </p>
           </div>
-          <div class="top" style="display: flex; flex-direction: column; align-items:flex-start;justify-content: flex-start;">
-          <img src="./assets/Prompt bar.png" alt="Prompt bar" style="margin-top: 30px; width: 100%;">
+          <!-- <div class="search-bar" style="display: flex; flex-direction: column; align-items:flex-start;justify-content: flex-start;">
+              <input type="search" placeholder="Search..." style="margin-top: 30px;padding: 10px; width: 350px;">
+          </div> -->
+          <div class="search-bar flex flex-col items-start justify-start">
+            <input type="search" placeholder="Ask a question..." class="mt-8 px-6 w-96 h-8 rounded-md" style="border: 2px solid var(--textcolor2); background-color: var(--backgroundcolor1);">
           </div>
         </div>
 
 
-        <div class="right" style="display: flex; flex-direction:row;justify-content: flex-end; align-items: flex-end; padding: 20px;">
-          <img src="./assets/Vector 2.png" alt="Prompt bar" style="width:15%; margin-bottom: 200px;">
+        <div class="right flex flex-row justify-end items-end p-5">
+          <!-- <img src="./assets/Vector 2.png" alt="Prompt bar" style="width:15%; margin-bottom: 200px;"> -->
           <div class="r" style="display: flex; flex-direction: column; align-items:center; padding: 20px;">
             <img src="./assets/Frame.png" alt="Prompt bar" style="width: 15%; margin-bottom: 40px;">
-            <h1 class="text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl">
+            <h1 class="flex flex-col items-start text-textcolor2 font-extrabold font-custom text-2xl md:text-4xl mr-6">
               <div class="whitespace-nowrap mb-3">Choose the best doctor </div>
               <div class="whitespace-nowrap">for your health needs</div>
             </h1>
-            <div class="container" style="display: flex; flex-direction: column; align-items: flex-start; padding: 20px;margin-right: 30px;margin-top: 20px; text-align: center; ">
+            <div class="container" style="display: flex; flex-direction: column;justify-content: flex-start; align-items: flex-start; padding: 20px;margin-top: 20px; text-align: center; ">
               <p class="text-textcolor1 font-custom font-medium text-xl lg:flex-wrap " style="text-align: left; width: fit-content;">
                   Choose the best doctor for your health needs<br>
                   and experience personalized care tailored to<br>
@@ -156,8 +159,11 @@
               </p>
             </div>
           </div>
-          <div class="pic">
-            <img src="./assets/Group 20.png" alt="Prompt bar" style="width: 100%; margin-bottom: 40px;">
+          <div class="pic relative flex items-center justify-center">
+            <img src="./assets/schedule call.png" alt="Prompt bar" class="w-full mb-10">
+            <button class="px-4 py-3 rounded-lg font-bold shadow-lg absolute bottom-0 left-0 mb-10" style="background-color: var(--textcolor2); color: white;">
+              Schedule Call
+            </button>
           </div>
         </div>
         <div class="top" style="display: flex; flex-direction: column; align-items:flex-start;">

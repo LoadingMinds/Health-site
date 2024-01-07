@@ -5,9 +5,14 @@ module.exports = {
     extend: {
       screens: {
         'sc': '1200px',
+        'br': '1173px',
+        'rw' :'882px',
+        'ui':'764px',
+
       },
       fontFamily: {
-        'custom': ['Kanit', 'fallbackFont', 'sans-serif']
+        'myriad': ['Myriad Pro', 'sans-serif']
+        // 'custom': ['Kanit', 'fallbackFont', 'sans-serif']
       },
       colors: {
         'backgroundcolor1': 'var(--backgroundcolor1)',
@@ -19,6 +24,7 @@ module.exports = {
       }
     },
   },
+  variants: {},
   plugins: [],
 }
 
